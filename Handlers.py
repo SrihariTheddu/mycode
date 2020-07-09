@@ -8,7 +8,6 @@ from email.message import EmailMessage
 class MainHandler(Admin):
     
     def __init__ (self):
-        #self.auth_title = input('PROJECT NAME    :  ')
         self.auth_title ='ganesh'
         try:
             os.mkdir(self.auth_title)
