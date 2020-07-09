@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "friendpay",
+  "private_key_id": "7e54a0b12600cb235a711a03249af443736d7b0b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDhO9a+x81NcLN\ni/oJbf4CiJb1NUj6IPlrbaxStm3h1JQsyA2rXLf6H8XS5NdF2Vme+wJPj32HF97P\nGGs8oPfK1Y1v9kleUEeAmE8hkT+AbJ8Xs4EnEULAZnQ5rPm8itlXxtwdSZ3vH/WP\n23b7idB72nTWwpD5TVJJLVo2DLTuY8kQblfsqfg96Tb8GTaMnJLfLxzH84LyTVOa\nO9KdCTeI8Ms37pTiblvpJHKP8tDMO06JLJrCf944hoP6Cbjc0QMN6MistCvE63zM\nwd6B7esXNJiHsrx4FFp1bF33hXmhizPlVz9wwAS1O6rwyEx2fHrMMnK0GLopIMSG\n0UfPo1UVAgMBAAECggEAA5fgg5cYIC3GiWlr02ltpFHVbUp3L4xNXoQRCVs51jLi\n2Ai8TOkLwzUJY+tH21Nwm/4J2/HLmiDhu9kQ0T8Zayxxj6qJvqZum8EUZP/B7az0\n7cYjNtdCXlpnO/nmS0xTvq90el/7ib30nyg08yUreX7LM1yMfYhw65deOtctYzCd\nl2K5o2SzITgxJku3CWePbAzfGcOZjSQaXTAFWDFGf/0oDasbpH29B1LZCGtjQvc2\nzqb330+3i+Wa1op4LM0ua7ax6hCC2HiFxcov66c9dj4I9hrk+cbJmqMzffWeF/Wi\n6o0aHBu0t54cXT/UOKYic5LH8+xa6v54274V6KWxIQKBgQDyvbO675z6S6vQcRJX\nP9UOq4Itxz1YXM4XHDxMN8zQ6nCRJuiKlU5GrD2lcoyXAhEwmewXIkFhvTkE5OlP\n3FwYNmOpQZUqvikklo6vKBuaKsaVcybBUQIyvz5pQXenSfABTK/SPknh+aCeM0Ua\nP+aJ0/eTk9SOkj1xYW64svxyMwKBgQDOMuvlLoaZT57zngT7r1I0RdhI2HZb7Ree\ndh97lMMCB1XlxShV9Vt2N3LpU6CUEf+b1miAx6D4+VuOo2V0HVur7UsPAlD4sZdz\n9xscWZ9Bxwi51xStpKpH55o7gIo4gGDGHFWS6jAOYLIykVs1Us1k/MkkXGAAFb4K\n4cibqWUjlwKBgH27WQ8o8eyLqZEsIE3lGFyi5akEnHfaij1aOLlZ5dMIvAnTV3wA\n3iypJr092iiVv4WnFKze53LS6mfokhj1kRZRhcmz2KntGa6D9aAwbCusoHPk01wq\ns7LJcHBgorOaDqD9scx6yxYrkNCgydhQ5P7bNk/QsLawdPb3erxcqXoVAoGBAMJ5\nAEbMlKGvmGiH1odRmSQ3438AuNCGUkpfed3iNfGJ3ZexVRONLs/WCAjLmJ1ORFdD\n5pfer5FiDNoAfUUAE1+Zk7r6IkgLpp32ppkcZblx8Gbl1VjX/smGQ85usu4LFjqC\nqqq/OMe2pxpOQUmPaKwgRcyHWvt5hh1ZSQyWvQ7NAoGBAOJG1czpNTw2O2FqvL6p\ndxSk3hrlX/zEu4YdSPQ2bcFtL89TDWleEXCTmwM9uOO42B2Wxjn3P7brKJhI6ymr\no6V1Q3/+h98GjtZL5uThidws3c6ZjwDlQV+2TTd2zmd054Yo6dgZatYkLPL0cpxB\ncDsIae6YQPtwOTVyFkH7tXIH\n-----END PRIVATE KEY-----\n",
+  "client_email": "sameer@friendpay.iam.gserviceaccount.com",
+  "client_id": "118422612581367533396",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sameer%40friendpay.iam.gserviceaccount.com"
+}
