@@ -11,7 +11,7 @@ from AdminPanel import Admin
 import threading
 class DataBaseModel(MainHandler,Connector):
     
-    def __init__(self,title):
+    def __init__(self,gsheet_title,credentials):
         '''
         Starting Point of the execution..
         Class     : DataBaseModel
@@ -20,31 +20,17 @@ class DataBaseModel(MainHandler,Connector):
         process   : executes the all the initial credentials ......
         return    : None
         '''
-        self.title = title
-        
+        self.title = gsheet_title
         super().__init__()
-        
-        
-        
-        
         scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-        
         # Adding Credentials to perform Operations on DataBaseSheet or Google SpreadSheet
         self.creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
-        
         self.report.warning(f'@{self.auth_admin}  ADDING CREDENTIALS....')
-        
-        
         # authorising the client
-        self.client = gspread.authorize(self.creds)
-        
+        self.client = gspread.authorize(credentials)
         self.DataBaseSheet = self.client.open(self.title).sheet1
-        
         self.report.info('COLLECTING DATA ....')
-        
-        
         self.DataBaseData = pd.DataFrame(self.DataBaseSheet.get_all_records())
-        
         self.report.info(f'''\033[1;34;9m 
         Administration Block:
             Admin Name   : {self.auth_admin}
@@ -56,18 +42,10 @@ class DataBaseModel(MainHandler,Connector):
        google Account : {self.auth_emailid}
        -------------------------------
         ''')
-        
-        
-        
         self.DataBase = self.DataBaseSheet.get_all_records()
-        '''
-        Rank attribute
-        '''
+        '''Rank attribute'''
         self.rank = len(self.DataBaseData.ID)
-        
         self.attributes = None
-        
-        
         self.report.info(f'Records count :   {self.rank}')
         
 
@@ -378,10 +356,8 @@ class DataBaseModel(MainHandler,Connector):
             if input('Enter Admin password.  : ')==self.password:
                 for count in range(len(self.DataBaseData.ID)+2):
                     self.DataBaseSheet.delete(count)
-            else:
-                pass
         except:
-           pass
+           return "Could not delete the data"
    
    
    
@@ -408,13 +384,6 @@ class DataBaseModel(MainHandler,Connector):
 
 
 
-#    main function
-
-
-
-db =DataBaseModel('database')
-
-db.posterprint()
 
 
 
